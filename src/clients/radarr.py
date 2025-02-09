@@ -38,7 +38,7 @@ class RadarrClient:
     def __delete_media(self, media_id: int):
         url = f"{self.base_url}/movie/{media_id}"
         headers = {"X-Api-Key": self.api_key}
-        params = {"deleteFiles": True, "addImportExclusion": False}
+        params = {"deleteFiles": True, "addImportExclusion": True}
 
         response = requests.delete(url, headers=headers, params=params, timeout=30)
         if response.status_code != 200:
