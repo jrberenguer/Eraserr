@@ -68,12 +68,17 @@ docker run -d --name eraserr --volume /path/to/config.json:/app/config.json ecso
 
 ## Configuration
 
-1. Copy `config.example.json` to `config.json`. 
+1. Copy `config.example.json` to `config.json`.
 2. See [CONFIGURATION.md](CONFIGURATION.md) for detailed instructions on setting up `config.json`.
 
-## Watched Content Logic                                                                                                                                                                                                                              
- The logic for determining whether content is considered "watched" has been updated. It no longer relies solely on the viewing history. Please refer to the                                 
- [CONFIGURATION.md](CONFIGURATION.md) file for detailed information on how to configure the new watched content logic.          
+## Watched Content Logic
+
+The logic for determining whether content is considered "watched" has been updated. It no longer relies solely on the viewing history. Please refer to the
+[CONFIGURATION.md](CONFIGURATION.md) file for detailed information on how to configure the new watched content logic.
+
+## Sonarr Import List Exclusion
+
+When content is deleted from Sonarr, the `addImportListExclusion` option is now set to `True`. This prevents the deleted content from being re-imported.
 
 [0]: https://www.python.org/downloads/ "Python 3.7+"
 [1]: https://pip.pypa.io/en/stable/installation/ "Pip"
