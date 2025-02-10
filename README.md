@@ -71,6 +71,10 @@ docker run -d --name eraserr --volume /path/to/config.json:/app/config.json ecso
 1. Copy `config.example.json` to `config.json`. 
 2. See [CONFIGURATION.md](CONFIGURATION.md) for detailed instructions on setting up `config.json`.
 
+## Watched Content Logic                                                                                                                                                                                                                              
+ The logic for determining whether content is considered "watched" has been updated. It no longer relies solely on the viewing history. Please refer to the                                 
+ [CONFIGURATION.md](CONFIGURATION.md) file for detailed information on how to configure the new watched content logic.          
+
 [0]: https://www.python.org/downloads/ "Python 3.7+"
 [1]: https://pip.pypa.io/en/stable/installation/ "Pip"
 [2]: https://hub.docker.com/r/ecsouthwick/eraserr "Docker repository"
